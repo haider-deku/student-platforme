@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="controle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>sign in</title>
+</head>
+<body>
+    <header>
+        <h1>Student platforme</h1>
+    </header>
+    <main>
+        <section>
+        <fieldset>
+        <legend><b>sign in</b></legend>
+        <form action="back.php" method="post" onsubmit="return verif2();">
+            <table>
+                <tr>
+                    <td><label for="ad">Adresse universitaire :</label></td>
+            
+                    <td><input type="text" name="ad" id="ad" placeholder="nomprenom@isitcom.rnu.tn"></td>
+                    <td><span id="errmail"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="nom">nom et prenom :</label></td>
+                
+                    <td><input type="text" name="nom" id="nom" ></td>
+                    <td><span id="errnom"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">Mot de passe :</label></td>
+
+                    <td><input type="password" name="pwd" id="pwd" placeholder="8 caractere"></td>
+                    <td><span id="errpwd"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="cpwd">confirme mot de passe :</label></td>
+
+                    <td><input type="password" name="cpwd" id="cpwd" placeholder=""></td>
+                    <td><span id="errcpwd"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="l">niveau :</label></td>
+
+                    <td>
+                        <select name="l" id="l">
+                            <option value="nothing">------</option>
+                            <option value="1">1er anne</option>
+                            <option value="2">2eme anee</option>
+                            <option value="3">3eme annee</option>
+                            <option value="master">master</option>
+                            <option value="cycle">cycle ingenieur</option>
+                        </select>
+                        <td><span id="errl"></span></td>
+                    </td>
+                </tr>                
+                <tr>                
+                    <td colspan="2">
+                        <input type="submit" value="sign in" id="btn" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>si vous avez un compte</span>
+                        <a href="login.html">login</a>
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+    </fieldset>
+    </section>
+    </main>
+    <footer>
+        <b> © 2021 All Rights Reserved Terms of 2LM2</b>
+    </footer>
+</body>
+</html>
