@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100%;
+    background: #f4f4f4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+header {
+    padding-right: 10em;
+    height: 80px;
+    background-color: #182153;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* THIS distributes items: left and right */
+    align-items: center; /* vertically center */
+    padding: 0 20px; /* optional: add some spacing on sides */
+}
+
+
+#main_etudiant section .post,.postContainer .post{
+    box-sizing: border-box;
+    margin-top:1em;
+    height: auto;
+    width: 50em;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 1em;
+}
+
+#main_etudiant  aside{
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 15em;
+    padding: 1em;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+    display: block;
+    unicode-bidi: isolate;
+    position: fixed;
+    margin-top: 5em;
+}
+#main_etudiant section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+
+
+#logout {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #a5a5a5;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+main#main_etudiant {
+    display: flex;
+    width: 100%;
+    padding-top: 5empx;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+
+.accarea {
+    background-color: white;
+    border-radius: 10px;
+    width: 20em !important; 
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-left: 1em;
+    height: calc(100vh - 6em); /* Adjust based on header height */
+    overflow-y: auto;
+}
+
+
+.acc { 
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    width: 16em;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5em;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+/* Posts */
+.posts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.postContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.post {
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: 500px;
+    margin-left: 5em;
+}
+
+.post .username {
+    font-weight: bold;
+    font-size: smaller;
+    margin-bottom: 0.5em;
+}
+
+.post .pic {
+    margin-top: 1em;
+}
+
+.post .cpic {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+.username  {
+    font-weight: bold;
+    font-size: smaller;
+}
+.del{
+    background-color: red;
+    height: 2em;
+    width: 10em;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    margin-top: 0.5em;
+}
+.act{
+    background-color: rgb(10, 145, 0);
+    height: 2em;
+    width: 10em;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 0.5em;
+    border: none;
+    
+}
+.rep{
+    background-color: rgb(255, 72, 0);
+    height: 2em;
+    width: 10em;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 0.5em;
+    border: none;
+}
+

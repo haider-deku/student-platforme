@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body + base */
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* HERO principal */
+.hero {
+  display: flex;
+  height: 100vh;
+  background-color: #2d228f; /* fond sombre */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Image sur la moitié droite */
+.hero::after {
+  content: "";
+  flex: 1;
+  background: url('etud.jpg') no-repeat center center/cover;
+}
+
+/* Nav-barre en haut */
+.nav-bar {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(208, 235, 235, 0.9); /* un peu transparent */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(5px); /* effet verre */
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #5cd6ff;
+}
+
+/* Liens de navigation */
+.nav-links a {
+  color: #5cd6ff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* Partie texte à gauche */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 80px;
+  z-index: 2;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* Bouton principal */
+.btn {
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  
+  .hero::after {
+    height: 50%;
+    width: 100%;
+  }
+  
+  .hero-content {
+    align-items: center;
+    text-align: center;
+    padding: 120px 30px 30px;
+  }
+
+  .nav-bar {
+    padding: 15px 30px;
+  }
+}
